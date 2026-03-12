@@ -1,0 +1,234 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="价格 - JaClaw">
+  <!-- 导航栏 -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--color-bg)]/80 backdrop-blur-md border-b border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-2">
+        <span class="text-2xl">🦞</span>
+        <span class="text-xl font-bold text-white">JaClaw</span>
+      </a>
+      <div class="flex items-center gap-6">
+        <a href="/" class="text-[var(--color-text-muted)] hover:text-white transition">首页</a>
+        <a href="/pricing" class="text-[var(--color-accent)] font-semibold">价格</a>
+        <a href="https://github.com" target="_blank" class="text-[var(--color-text-muted)] hover:text-white transition">GitHub</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 页面头部 -->
+  <section class="pt-32 pb-16 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">
+        简单透明的<span class="gradient-text">定价</span>
+      </h1>
+      <p class="text-xl text-[var(--color-text-muted)]">
+        选适合你的，不满意随时停
+      </p>
+    </div>
+  </section>
+
+  <!-- 会员卡片 -->
+  <section class="py-12 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid md:grid-cols-4 gap-6">
+        <!-- 试用版 -->
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">试用版</h3>
+          <div class="text-3xl font-bold text-white mb-4">免费</div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-6">3天</p>
+          <ul class="space-y-3 text-sm text-[var(--color-text-muted)] mb-8">
+            <li>✅ AI 对话 3天</li>
+            <li>✅ 1个 Provider</li>
+            <li>✅ 浏览技能</li>
+            <li>✅ 1个预设 Agent</li>
+            <li>❌ 渠道集成</li>
+            <li>❌ 安全检测</li>
+            <li>❌ 付费技能</li>
+          </ul>
+          <a href="#" class="block text-center py-3 rounded-xl border border-[var(--color-border)] text-white hover:border-[var(--color-accent)] transition">
+            免费试用
+          </a>
+        </div>
+
+        <!-- 普通会员 -->
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">普通会员</h3>
+          <div class="text-3xl font-bold text-white mb-4">¥199<span class="text-sm font-normal">/年</span></div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-6">入门首选</p>
+          <ul class="space-y-3 text-sm text-[var(--color-text-muted)] mb-8">
+            <li>✅ AI 对话</li>
+            <li>✅ 3个 Provider</li>
+            <li>✅ 90天对话历史</li>
+            <li>✅ 本地模型 Ollama</li>
+            <li>✅ 1个渠道</li>
+            <li>✅ 基础安全检测</li>
+            <li>✅ 5个免费技能</li>
+            <li>✅ 3个工作区</li>
+            <li>✅ 3个预设 Agent</li>
+          </ul>
+          <a href="#" class="block text-center py-3 rounded-xl bg-[var(--color-accent)] text-white font-semibold hover:opacity-90 transition">
+            立即购买
+          </a>
+        </div>
+
+        <!-- 高级会员 -->
+        <div class="bg-[var(--color-bg-card)] border-2 border-[var(--color-accent)] rounded-2xl p-6 relative">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[var(--color-accent)] text-white text-xs font-bold rounded-full">
+            最受欢迎
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">高级会员</h3>
+          <div class="text-3xl font-bold text-white mb-4">¥299<span class="text-sm font-normal">/年</span></div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-6">功能翻倍</p>
+          <ul class="space-y-3 text-sm text-[var(--color-text-muted)] mb-8">
+            <li>✅ 普通会员全部</li>
+            <li>✅ Provider 无限</li>
+            <li>✅ 对话历史永久</li>
+            <li>✅ 3个渠道</li>
+            <li>✅ 完整6项安全检测</li>
+            <li>✅ 威胁修复建议</li>
+            <li>✅ 安全报告导出</li>
+            <li>✅ 20个技能</li>
+            <li>✅ 付费技能</li>
+            <li>✅ 5个自定义 Agent</li>
+            <li>✅ 对话分析报表</li>
+            <li>✅ 微信群支持</li>
+          </ul>
+          <a href="#" class="block text-center py-3 rounded-xl bg-gradient-to-r from-[#f97316] to-[#fb7185] text-white font-bold hover:opacity-90 transition">
+            立即购买
+          </a>
+        </div>
+
+        <!-- 终身会员 -->
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-2xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">终身会员</h3>
+          <div class="text-3xl font-bold text-white mb-4">¥599<span class="text-sm font-normal">/次</span></div>
+          <p class="text-sm text-[var(--color-text-muted)] mb-6">一次付费永久</p>
+          <ul class="space-y-3 text-sm text-[var(--color-text-muted)] mb-8">
+            <li>✅ 高级会员全部</li>
+            <li>✅ 渠道无限</li>
+            <li>✅ 技能无限</li>
+            <li>✅ 自定义 Agent 无限</li>
+            <li>✅ Agent 工作流</li>
+            <li>✅ 自定义渠道</li>
+            <li>✅ 发布技能</li>
+            <li>✅ 工作区无限</li>
+            <li>✅ 终身免费更新</li>
+            <li>✅ VIP 微信群</li>
+          </ul>
+          <a href="#" class="block text-center py-3 rounded-xl border border-[var(--color-accent)] text-[var(--color-accent)] font-semibold hover:bg-[var(--color-accent)] hover:text-white transition">
+            终身会员
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专属服务 -->
+  <section class="py-16 px-6 bg-[var(--color-bg-secondary)]">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-white text-center mb-12">专属付费服务</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">Agent 定制</h3>
+          <div class="text-2xl font-bold text-[var(--color-accent)] mb-2">¥499/个</div>
+          <p class="text-sm text-[var(--color-text-muted)]">根据需求定制专属 Agent，提供配置文件和使用文档</p>
+        </div>
+        
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">工作流搭建</h3>
+          <div class="text-2xl font-bold text-[var(--color-accent)] mb-2">¥799/个</div>
+          <p class="text-sm text-[var(--color-text-muted)]">设计并实现自动化工作流，交付调试完成的模板</p>
+        </div>
+        
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">OPC 组织架构</h3>
+          <div class="text-2xl font-bold text-[var(--color-accent)] mb-2">¥1299</div>
+          <p class="text-sm text-[var(--color-text-muted)]">设计多 Agent 协作架构，包含架构图、配置和培训</p>
+        </div>
+        
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl p-6">
+          <h3 class="text-lg font-bold text-white mb-2">技术支持</h3>
+          <div class="text-2xl font-bold text-[var(--color-accent)] mb-2">¥99/月</div>
+          <p class="text-sm text-[var(--color-text-muted)]">1对1微信支持、远程协助，快速响应</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 推荐技能包 -->
+  <section class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-white text-center mb-12">推荐技能包</h2>
+      
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl p-6 flex items-center justify-between">
+          <div>
+            <h3 class="text-lg font-bold text-white">效率工具包</h3>
+            <p class="text-sm text-[var(--color-text-muted)]">日程管理、待办提醒、会议纪要</p>
+          </div>
+          <div class="text-right">
+            <div class="text-lg text-[var(--color-text-muted)] line-through">¥89</div>
+            <div class="text-2xl font-bold text-[var(--color-accent)]">¥49</div>
+          </div>
+        </div>
+        
+        <div class="bg-[var(--color-bg-card)] border border-[var(--color-border)] rounded-xl p-6 flex items-center justify-between">
+          <div>
+            <h3 class="text-lg font-bold text-white">开发者工具包</h3>
+            <p class="text-sm text-[var(--color-text-muted)]">代码审查、文档生成、Git助手</p>
+          </div>
+          <div class="text-right">
+            <div class="text-lg text-[var(--color-text-muted)] line-through">¥149</div>
+            <div class="text-2xl font-bold text-[var(--color-accent)]">¥99</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-16 px-6 bg-[var(--color-bg-secondary)]">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold text-white text-center mb-12">常见问题</h2>
+      
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-2">Q: 试用版可以体验多久？</h3>
+          <p class="text-[var(--color-text-muted)]">A: 3天，包含核心AI对话功能。</p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-2">Q: 终身会员是一次付费吗？</h3>
+          <p class="text-[var(--color-text-muted)]">A: 是的，¥599 一次付费，终身使用，终身更新。</p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-2">Q: 普通会员和高级会员区别在哪？</h3>
+          <p class="text-[var(--color-text-muted)]">A: 高级会员仅多 ¥100，但功能翻倍：渠道从1个变无限、技能从5个变20个、还支持自定义Agent。</p>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold text-white mb-2">Q: 企业如何购买？</h3>
+          <p class="text-[var(--color-text-muted)]">A: 联系销售 ¥2999/年 起，10人起购，含集中管理、SSO。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="py-10 px-6 border-t border-[var(--color-border)]">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-xl">🦞</span>
+        <span class="font-semibold text-white">JaClaw</span>
+      </div>
+      <p class="text-sm text-[var(--color-text-muted)]">
+        © 2026 JaClaw. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</Layout>
